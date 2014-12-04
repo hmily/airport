@@ -1,0 +1,342 @@
+html { 		
+
+	}
+
+body {
+ 	 background-color: black;
+}
+	
+	
+#background {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-image: url('images/background_dots.png');
+	opacity: 0.2;
+    background-repeat: repeat;
+    background-size: 60%;
+    z-index: -1;
+}
+
+#prompt {
+	margin-top: -75px;
+	color: white;
+	font-family: "Zapfino", Helvetica, Sans-serif;
+	font-size: 50pt;
+	color: #fff;
+	opacity: 0.4;
+	text-align: center;
+	z-index: -1;
+}
+
+#content_wrapper {
+	width: 400px;
+	height: 300px;
+	position: absolute;
+	top: 200px;
+	left:520px;
+}
+
+#path_wrapper {
+	position:relative;
+	top:-45px;
+	left: 300px;
+	max-height: 650px;
+	max-width: 100%;
+}
+
+.paths {
+	position:absolute;
+	left: 0px;
+	top: 0px;
+	visibility: hidden;
+}
+
+#jfk_pdx_wrapper {
+
+}
+
+#jfk_lax_wrapper {
+	position:relative;
+	top: 120px;
+	left: 10px;
+}
+
+#jfk_las_wrapper {
+	position:relative;
+	top: 125px;
+	left: 80px;
+}
+
+#lax_pdx_wrapper {
+	position: relative;
+	left: -12px;
+}
+
+#las_lax_wrapper {
+	position: relative;
+	top: 255px;
+	left: 15px;
+}
+
+#las_pdx_wrapper {
+
+}
+
+#jfk_pdx{
+	width: 790px;
+}
+
+#pdx_jfk {
+	width: 790px;
+}
+
+#jfk_lax{
+	width: 775px;
+}
+
+#lax_jfk {
+	width: 775px;
+}
+
+#jfk_las {
+	width: 700px;
+}
+
+#las_jfk {
+	width: 700px;
+}
+
+#lax_pdx {
+	width: 32px;
+}
+
+#pdx_lax {
+	width: 32px;
+}
+
+#las_lax {
+	width: 70px;
+}
+
+#lax_las {
+	width: 70px;
+}
+
+#las_pdx {
+	width: 85px;
+}
+
+#pdx_las {
+	width: 85px;
+}
+
+#input_form {
+	width: 400px;
+	height: 70px;
+}
+
+.from_to_box {
+	width: 100%;
+	height: 100%;
+	background: white;
+	border: 2px solid #333333;
+	border-radius: 10px;
+	opacity: 0.9;
+}
+
+.input_wrapper {
+	display: inline;
+	width: 35%;
+	height: 100%;
+}
+
+#from_wrapper {
+	float: left;
+}
+
+#to_wrapper {
+	float: right;
+}
+
+#invalid_from_box {
+	visibility: hidden;
+	float: left;
+	text-align: center;
+}
+
+#invalid_to_box {
+	visibility: hidden;
+	float: right;
+	text-align: center;
+}
+
+#warning_wrapper {
+	width: 400px;
+	height: 30px;
+}
+
+.invalid_warning {
+	position: inline;
+	color: white;
+	font-family: "Futura", Helvetica, Sans-Serif;
+	font-size: 10pt;
+	width: 35%;
+	text-align: center;
+	opacity: 0.7;
+}
+
+#distance_wrapper {
+	width: 100%;
+	color: white;
+	font-family: "Futura", Helvetica, Sans-Serif;
+   	font-stretch: condensed;
+	font-weight: medium;
+	margin-top: -30px;
+	opacity: 0.85;
+}
+
+#distance_display {
+	width: 100%;
+	text-align: center;
+	font-size: 110pt;
+	position: absolute;
+}
+
+#miles {
+	font-family: "Futura", Helvetica, Sans-Serif;
+   	font-stretch: condensed;
+	font-weight: medium;
+	font-size: 20pt;
+	display: inline;
+}
+
+input {
+	font-family: "Futura", Helvetica, Sans-Serif;
+	font-weight: medium;
+	font-size: 30pt;
+   	color: #08aac2;
+   	text-align: center;
+	text-transform: uppercase;
+}
+
+input::-webkit-input-placeholder {
+   	font-family: "Futura", Helvetica, Sans-Serif;
+   	font-stretch: condensed;
+	font-weight: medium;
+	font-size: 30pt;
+   	color: #333333;
+   	text-align: center;
+   	
+}
+
+input:-moz-placeholder { /* Firefox 18- */
+   	font-family: "Futura", Helvetica, Sans-Serif;
+   	font-stretch: condensed;
+	font-weight: medium;
+	font-size: 30pt;
+   	color: #333333;
+   	text-align: center;
+}
+
+input::-moz-placeholder {  /* Firefox 19+ */
+   	font-family: "Futura", Helvetica, Sans-Serif;
+   	font-stretch: condensed;
+	font-weight: medium;
+	font-size: 30pt;
+   	color: #333333;
+   	text-align: center;
+}
+
+input:-ms-input-placeholder {  
+   	font-family: "Futura", Helvetica, Sans-Serif;
+   	font-stretch: condensed;
+	font-weight: medium;
+	font-size: 30pt;
+   	color: #333333;
+   	text-align: center;
+}
+
+#from_box {
+	float: left;
+}
+
+#to_box {
+	float: right;
+}
+
+#map {
+	height: 650px;
+    width: auto;
+    position: absolute;
+	top: 150px;
+	left: 220px;
+    vertical-align: center; 
+}
+
+.airport_icons {
+	width: 25px;
+    height: 25px;
+    background-color: #1d626c;
+    border-radius: 25px; 
+    opacity: 0.6;
+}
+
+.airport_icons:hover {
+	cursor: pointer;
+	opacity: 1.0;
+	width: 35px;
+	height: 35px;
+	background-color: #08aac2;
+}
+
+#jfk_icon {
+	position: absolute;
+	top: 370px;
+	left: 1080px;
+}
+
+#jfk_icon:hover #jfk_text {
+	visibility: visible;
+}
+
+#lax_icon {
+	position: absolute;
+	top: 525px;
+	left: 310px;
+}
+
+#lax_icon:hover #lax_text {
+	visibility: visible;
+}
+
+#las_icon {
+	position: absolute;
+	top: 500px;
+	left: 380px;
+}
+
+#las_icon:hover #las_text {
+	visibility: visible;
+}
+
+#pdx_icon {
+	position: absolute;
+	top: 250px;
+	left: 300px;
+}
+
+#pdx_icon:hover #pdx_text {
+	visibility: visible;
+}
+
+.icon_text {
+	font-family: "Futura", Helvetica, Sans-Serif;
+	color: white;
+	position: relative;
+	margin-top: -20px;
+	margin-left: 5px;
+	visibility: hidden;
+}
